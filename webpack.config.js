@@ -45,6 +45,21 @@ module.exports = {
                     }
                 }
             },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[path][name].[ext]',
+                            context: path.resolve(__dirname, 'src/assets'),
+                            outputPath: 'assets',
+                            publicPath: 'assets',
+                            esModule: false,
+                        },
+                    },
+                ],
+            },
         ]
     }
 }
