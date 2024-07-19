@@ -1,6 +1,7 @@
 const path = require('path');  // Importa o módulo 'path' do Node.js para manipulação de caminhos de arquivos
 const HtmlWebpackPlugin = require('html-webpack-plugin');  // Plugin para gerar arquivos HTML
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');  // Plugin para extrair CSS em arquivos separados
+const webpack = require('webpack');
 
 module.exports = {
     entry: "./src/index.js",  // Ponto de entrada do webpack, onde começa a construção do bundle
@@ -15,8 +16,13 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: "styles.css"  // Nome do arquivo CSS de saída
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin(),
     ],
+    devServer: {
+        static: './dist',
+        hot: true,
+    },
     mode: 'development',  // Modo de construção do webpack ('development', 'production' ou 'none')
     module: {
         rules: [
