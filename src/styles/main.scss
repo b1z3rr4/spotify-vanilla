@@ -109,3 +109,57 @@ body {
     align-items: center;
     flex-direction: column;
 }
+.music-1{
+    
+    
+    width: 5rem;
+    height: 5rem;
+    margin-top: 24px;
+    margin-left: 15px;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.music-2{
+    
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-left: 15px;
+    position: relative;
+    
+}
+
+.music-3{
+    
+    
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-left: 15px;
+    position: relative;
+}
+
+.music-4{
+   
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-left: 15px;
+    position: relative;
+    
+}
+ .music-numb{
+    display: inline-block;
+    margin-left: 15px;
+    
+ }
+
+ .hot-box{
+    display: flexbox;
+    color: $text-color-white ;
+    size: 18px;
+    margin-top: 160px;
+    margin-left: 16px;
+ }
