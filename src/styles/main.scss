@@ -86,11 +86,12 @@ body {
     position: absolute;
     width: 100%;
     bottom: 0;
-
-    padding: 16px 56px 56px 56px;
+    justify-content: space-between;
+    padding: 16px 45px 30px 45px;
+    border-top: 25px;
 
     background: $secondary-color;
-    background: linear-gradient(180deg, rgba(18,18,18,0) 0%, rgba(18,18,18,0.8) 15%, rgba(18,18,18,1) 40%);
+    background: linear-gradient(180deg, rgba(18,18,18,0) 0%, rgba(18,18,18,0.8) 80%, rgba(18,18,18,1) 100%);
 }
 
 .nav {
@@ -112,9 +113,9 @@ body {
 .music-1{
     
     
-    width: 5rem;
-    height: 5rem;
-    margin-top: 24px;
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
     margin-left: 15px;
     position: relative;
     display: inline-block;
@@ -123,36 +124,42 @@ body {
 
 .music-2{
     
-    width: 5rem;
-    height: 5rem;
-    margin-top: 1rem;
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
     margin-left: 15px;
     position: relative;
+    display: inline-block;
     
 }
 
 .music-3{
     
     
-    width: 5rem;
-    height: 5rem;
-    margin-top: 1rem;
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
     margin-left: 15px;
     position: relative;
+    display: inline-block;
 }
 
 .music-4{
    
-    width: 5rem;
-    height: 5rem;
-    margin-top: 1rem;
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
     margin-left: 15px;
     position: relative;
+    display: inline-block;
     
 }
  .music-numb{
     display: inline-block;
     margin-left: 15px;
+    font-size: medium;
+    color: #fff;
+    font-weight: 100;
     
  }
 
@@ -160,6 +167,36 @@ body {
     display: flexbox;
     color: $text-color-white ;
     size: 18px;
-    margin-top: 160px;
+    margin-top: 173px;
     margin-left: 16px;
  }
+
+ .music-container {
+    display: flex;
+    width: auto;
+    height: 48px;
+    align-items: center;
+    margin-top: 24px;
+ }
+
+ main.content {
+    width: 430px;
+    height: auto;
+    padding-top: 70px;
+ }
+
+ .music-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    gap: 5px;
+    .music-name {
+        color: #fff;
+        font-size: larger;
+    }
+    .access {
+        color: grey;
+        font-size: medium;
+    }
+ }
+
